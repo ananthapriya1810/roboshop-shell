@@ -7,9 +7,9 @@ logfile="/tmp/$0-$TIMESTAMP.LOG"
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-    echo "print $2 ...SUCCESS"
+    echo "print $2 ...FAILED"
     else 
-    echo "print $2 ....FAILED"
+    echo "print $2 ....SUCCESS"
     fi
 }
 
