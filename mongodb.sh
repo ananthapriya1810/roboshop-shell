@@ -1,5 +1,5 @@
 #!/bin/bash
-ID=$(id -U)
+ID=$(id -u)
 
 TIMESTAMP=(DATE +%F-%H-%M-%S)
 logfile="/tmp/$0-$TIMESTAMP.LOG"
@@ -13,7 +13,7 @@ VALIDATE(){
     fi
 }
 
-if [ $ID ne 0 ]
+if [ $ID -ne 0 ]
 
 then
 
